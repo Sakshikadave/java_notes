@@ -1,0 +1,81 @@
+
+------------multiclass------
+class Area{
+    static void Fun1(){
+        System.out.println("f");
+    }
+    static void Fun2(){
+        System.out.println("e");
+    }
+   
+}
+class Example{
+    static void Fun1(){
+   System.out.println("C");
+    }
+   static void Fun2(){
+System.out.println("B");
+    }
+    public static void main(String[]args){
+        System.out.println("A");
+        Fun1();
+        Fun2();
+        Area.Fun1();
+        Area.Fun2();
+    }
+}
+
+==============================================
+
+object member variable/instant member variable 
+e.g
+int a;
+int b;
+
+
+///object member variable/instant member variable function
+ void Fun1()
+
+  class Mahesh
+
+ {
+    int x;
+    int y;
+    void Fun1(){
+System.out.println("fun1");
+    }
+    void Fun2(){
+   System.out.println("fun2");
+    }
+ }
+ 
+ 
+ class Object1 {
+    public static void main(String[]args){
+    Mahesh m1 = new Mahesh();
+    Mahesh m2 = new Mahesh();
+    m1.x= 5;
+    m2.y = 56;
+ System.out.println("Hello");
+   System.out.println(m1.x);
+System.out.println(m2.y);
+m1.Fun1();
+m2.Fun2();
+    }
+}
+=============================
+
+class Sakshi{
+   private static int x;
+   static void fun1(){
+      x =4;
+System.out.println("fun1");
+   }
+}
+
+class Object1{
+   public static void main(String[]args){
+      System.out.println("hiii");
+      Sakshi.fun1();
+   }
+}

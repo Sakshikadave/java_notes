@@ -1,0 +1,1559 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "intern_module2",
+    "dateExported": "2024-02-11T07:35:34.286Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "name": "dashboard",
+            "containerId": "",
+            "created": "2023-08-19T09:55:04.232Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-08-15T11:29:28.102Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "contactus",
+            "containerId": "",
+            "created": "2023-08-16T06:46:28.479Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "career",
+            "containerId": "",
+            "created": "2023-08-16T15:07:37.203Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "feedback",
+            "containerId": "",
+            "created": "2023-08-17T10:34:36.906Z",
+            "sortNum": 35000
+        },
+        {
+            "_id": "0ccedcff-1da8-4701-97b6-e7164725795b",
+            "name": "admin",
+            "containerId": "",
+            "created": "2023-08-18T07:01:08.750Z",
+            "sortNum": 45000
+        },
+        {
+            "_id": "9d61155c-452f-45bb-a0bb-2db384d6f391",
+            "name": "adminlogin",
+            "containerId": "",
+            "created": "2023-08-18T08:23:07.532Z",
+            "sortNum": 55000
+        },
+        {
+            "_id": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "news",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-20T05:55:15.596Z",
+            "sortNum": 65000
+        },
+        {
+            "_id": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "event",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-23T15:46:08.765Z",
+            "sortNum": 75000
+        },
+        {
+            "_id": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "alumni",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-23T16:10:09.133Z",
+            "sortNum": 85000
+        },
+        {
+            "_id": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "slider",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-23T16:38:00.422Z",
+            "sortNum": 95000
+        },
+        {
+            "_id": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "ourteam",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-24T17:42:11.419Z",
+            "sortNum": 105000
+        },
+        {
+            "_id": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "achievement",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-28T09:45:24.688Z",
+            "sortNum": 115000
+        },
+        {
+            "_id": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "gallery",
+            "containerId": "a02b7f71-4829-424c-afb6-f25c89968fa8",
+            "created": "2023-08-28T11:27:40.574Z",
+            "sortNum": 125000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b09b9ee6-6371-4deb-8eb3-2fc85b7b9a18",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "createuser",
+            "url": "http://localhost:8000/api/user/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-15T11:29:41.386Z",
+            "modified": "2023-08-18T08:30:39.060Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"sakshi\",\n    \"email\": \"kadve1031@gmail.com\",\n    \"contact\": \"7876545665\",\n    \"appearingAs\":\"Alumni\",\n    \"password\": \"1234566\",\n    \"role\":\"admin\",\n    \"alumniDetails\": {\n      \"batch\":\"4th\",\n  \"workInCompany\": \"tata\",\n  \"position\": \"developer\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b169c09-0f27-4c09-9cbb-5966546f7b46",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "9d61155c-452f-45bb-a0bb-2db384d6f391",
+            "name": "admin login",
+            "url": "http://localhost:8000/api/user/adminlogin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-18T08:22:44.168Z",
+            "modified": "2023-08-18T09:40:01.810Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyYzM2ODNjN2Y4ZjhhMmZjZTgxNSIsImlhdCI6MTY5MjM1MTUxNiwiZXhwIjoxNjkyNDM3OTE2fQ._uLrK4Qnj1AT1NZLmwe921mwuNGxAnVg6d6ZVYsiyHU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {  \"email\": \"kadve1031@gmail.com\",\n  \n    \"password\": \"1234566\"}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyYzM2ODNjN2Y4ZjhhMmZjZTgxNSIsImlhdCI6MTY5MjM1MDc2NCwiZXhwIjoxNjkyNDM3MTY0fQ.Rf0ebs1so8R9zgmi0YaRP_Ns7THnUKib4JQS9OnGi4w"
+            },
+            "tests": []
+        },
+        {
+            "_id": "23ea72da-ac80-415c-9dbc-097a8dc197f4",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "addnews",
+            "url": "http://localhost:8001/api/dashboard/addnews",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-19T09:55:14.286Z",
+            "modified": "2023-08-28T12:22:33.466Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Mansoona"
+                    },
+                    {
+                        "name": "description",
+                        "value": "mansoon is coming in nashik which makes whole nashik more greener"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2023-09-09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "17d92eb4-ce7c-4a61-8ec2-0020209a4b51",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "add",
+            "url": "http://localhost:8001/api/dashboard/addEvent",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-23T15:46:08.765Z",
+            "modified": "2023-08-28T11:38:12.069Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "location",
+                        "value": "Mansoona"
+                    },
+                    {
+                        "name": "description",
+                        "value": "mansoon is coming in nashik which makes whole nashik more greener"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2023-09-09"
+                    },
+                    {
+                        "name": "endDate",
+                        "value": "2023-09-09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "photos",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f4bd75f-be7e-47b7-883d-21bc4629ab7f",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "add",
+            "url": "http://localhost:8001/api/dashboard/addAlumni",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-23T16:10:09.133Z",
+            "modified": "2023-08-23T16:29:39.154Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullname\":\"sakshiiiiii\",\n    \"email\":\"sakshi@123\",\n    \"contact\":\"87877866755\",\n    \"current_position\":\"hjhkjhkjk\",\n    \"working\":\"tata\",\n    \"address\":\"pune\",\n    \"batch\":\"70\",\n      \"alumni\": {\n    \"email\": \"example@email.com\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "92019b48-7d35-4e69-9fd6-14646304e607",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "add",
+            "url": "http://localhost:8000/api/dashboard/addslider",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-23T16:38:00.422Z",
+            "modified": "2023-08-28T10:48:00.456Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b04cc139-725d-4a40-8fb6-349068825f6c",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "add",
+            "url": "http://localhost:8001/api/dashboard/addourteamPic",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-24T17:42:11.419Z",
+            "modified": "2023-08-24T17:44:48.921Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ", , description"
+                    },
+                    {
+                        "name": "position",
+                        "value": "description"
+                    },
+                    {
+                        "name": "description",
+                        "value": "description"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dcce90ea-d296-483a-ad52-a70a7307e8b9",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "add",
+            "url": "http://localhost:8001/api/dashboard/addachivement",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-28T09:45:24.688Z",
+            "modified": "2023-08-28T11:22:45.578Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": ", , description"
+                    },
+                    {
+                        "name": "description",
+                        "value": "description"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2002/09/09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "35ad7bae-71d0-4dc3-a3be-86f0c29ff80e",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "add",
+            "url": "http://localhost:8001/api/dashboard/addgallary",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-28T11:27:40.575Z",
+            "modified": "2023-08-28T11:28:14.726Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": ", , description"
+                    },
+                    {
+                        "name": "description",
+                        "value": "description"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2002/09/09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8fd8e4f3-f110-4e8e-bcdf-423c49073f74",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "add",
+            "url": "http://localhost:8002/api/contact/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-16T06:46:34.885Z",
+            "modified": "2023-08-16T10:07:02.800Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"Mansi Mahajan\",\n     \"email\":\"mansimahajn995@gmail.com\",\n     \"comment\":\"djhnj\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ab282611-5f29-4b10-b1b6-7dcf972399be",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "delete",
+            "url": "http://localhost:8002/api/contact/deleteContact/64dc71bf983b9b45faea7bec",
+            "method": "DELETE",
+            "sortNum": 21250,
+            "created": "2023-08-16T10:11:28.352Z",
+            "modified": "2023-08-16T10:16:13.614Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"Mansi Mahajan\",\n     \"email\":\"mansimahajn995@gmail.com\",\n     \"comment\":\"djhnj\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9b400a9f-8b88-4d75-a43c-ee351792c497",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "update",
+            "url": "http://localhost:8002/api/contact/updateContact/64dc71bf983b9b45faea7bec",
+            "method": "PUT",
+            "sortNum": 22500,
+            "created": "2023-08-16T10:11:17.736Z",
+            "modified": "2023-08-16T10:15:45.406Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"Mansi Mahajan\",\n     \"email\":\"mansimah5@gmail.com\",\n     \"comment\":\"djhnj\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "55ae076b-93da-4ccb-a6c7-2703e4480966",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "getall",
+            "url": "http://localhost:8002/api/contact/getallContact",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2023-08-16T10:11:06.632Z",
+            "modified": "2023-08-16T10:12:49.163Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"Mansi Mahajan\",\n     \"email\":\"mansimahajn995@gmail.com\",\n     \"comment\":\"djhnj\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "50398f98-bbfa-4e12-b048-881650cb60f5",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "login",
+            "url": "http://localhost:8001/api/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-16T06:53:55.509Z",
+            "modified": "2023-08-18T09:41:13.748Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {  \"email\": \"kadve1031@gmail.com\",\n  \n    \"password\": \"1234566\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9398b631-d9a0-448c-a40c-6fe7a927b5e5",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "5402888b-63af-4425-8954-a308b9e031b0",
+            "name": "/getaContact/:id",
+            "url": "http://localhost:8002/api/contact/getaContact/64dc9fc6b84e5e3790f1c445",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-16T10:08:21.080Z",
+            "modified": "2023-08-16T10:09:13.585Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"Mansi Mahajan\",\n     \"email\":\"mansimahajn995@gmail.com\",\n     \"comment\":\"djhnj\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bead832e-765f-4bfd-a2d3-5112d6b9421d",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "refreshtoken",
+            "url": "http://localhost:8002/api/user/refreshtoken",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-16T07:12:34.205Z",
+            "modified": "2023-08-16T07:12:53.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7e8a5a54-8ac2-4e10-87c6-d1005acac352",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "logout",
+            "url": "http://localhost:8002/api/user/logoutuser",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-16T07:14:33.001Z",
+            "modified": "2023-08-16T07:14:37.496Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5c15940-7fe9-4a6a-94a2-af10a8d6f8d5",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "updatedUser",
+            "url": "http://localhost:8001/api/user/64df2c3683c7f8f8a2fce815",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-08-16T07:25:40.215Z",
+            "modified": "2023-09-04T12:01:24.559Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"fullName\":\"sakshi\",\n    \"email\": \"kadve124@gmail.com\",\n    \"contact\": \"7899545665\",\n    \"appearingAs\":\"Alumni\",\n    \"password\": \"1234566\",\n    \"alumniDetails\": {\n      \"batch\":\"4th\",\n  \"workInCompany\": \"tata\",\n  \"position\": \"developer\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c28457a5-300d-4a2c-bcf0-71a7016bbb46",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "getauser",
+            "url": "http://localhost:8001/api/user/getauser/64df2c3683c7f8f8a2fce815",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-08-16T07:42:26.372Z",
+            "modified": "2023-08-18T09:41:25.261Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyYzM2ODNjN2Y4ZjhhMmZjZTgxNSIsImlhdCI6MTY5MjM1MTY3NiwiZXhwIjoxNjkyNDM4MDc2fQ.2v-OXfVKJUSBGt0kXQVrit9n12v0BH5Q4Mj6yrZA_JA"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyYzM2ODNjN2Y4ZjhhMmZjZTgxNSIsImlhdCI6MTY5MjM1MTAwMSwiZXhwIjoxNjkyNDM3NDAxfQ.oULLwmm8BQvW2Swtzoy95L43fLHQNf6J87RFXBLZ6Vc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4383f5e-2981-40d9-a0c3-dec545c40dec",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "getalluser",
+            "url": "http://localhost:8002/api/user/getalluser",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-08-16T07:45:58.084Z",
+            "modified": "2023-08-16T07:46:06.313Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c61365e-760e-48b5-b810-b52039c95085",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "delete",
+            "url": "http://localhost:8002/api/user/delete/64dc84af707643745dd66727",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-08-16T08:34:53.370Z",
+            "modified": "2023-08-16T08:36:47.449Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e4c0c03b-292f-4848-8c9e-ccad408c2735",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "password",
+            "url": "http://localhost:8001/api/user/password",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-08-16T08:41:16.530Z",
+            "modified": "2023-09-04T12:01:49.569Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"password\":\"123456tytrcxvcxvcxvhjg232\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyYzM2ODNjN2Y4ZjhhMmZjZTgxNSIsImlhdCI6MTY5MzgyODY3OSwiZXhwIjoxNjkzOTE1MDc5fQ.wuWf3BImO1_f1p_8RQVOiZms29qWv4-wa89A_LhyMtY"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6d97a7a-c41b-4fa8-b8d2-2241be682cd1",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "reset-password/:token",
+            "url": "http://localhost:8001/api/user/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGM4ZjlhZmYyNWNiOTFiODkxNWQ3YyIsImlhdCI6MTY5MjE3NjgyMywiZXhwIjoxNjkyMjYzMjIzfQ.FoBiW4kC_uy-6-06cx_m6N4vd5O6hraizFDNfM_BOHI",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-08-16T09:04:05.136Z",
+            "modified": "2023-09-04T12:08:48.264Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"password\":\"123456tytrcxvcxvcxvhjg232\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGM4ZjlhZmYyNWNiOTFiODkxNWQ3YyIsImlhdCI6MTY5MjE3NzI2NSwiZXhwIjoxNjkyMjYzNjY1fQ.Rdz_Szu5YIHijmX-NeCss5ACnkm4IaUBhG9BUJ8ajAA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c736b0da-19b3-4b2c-852a-1568cf5488d7",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "add",
+            "url": "http://localhost:8000/api/career/add",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-08-16T15:07:42.992Z",
+            "modified": "2023-08-16T15:16:04.117Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "413a5220-3847-43ec-95f6-d8c52eda110c",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "add",
+            "url": "http://localhost:8001/api/feedback/add",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-08-17T10:34:36.906Z",
+            "modified": "2023-08-20T07:18:44.005Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "sakshi"
+                    },
+                    {
+                        "name": "description",
+                        "value": "yesssssssssssssssssssssss"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "5"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\Blue And White Creative Abstract Join Us Talk Show Instagram Post.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "76935c91-b561-4fc9-9690-ba25153f5f7e",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "getacareer",
+            "url": "http://localhost:8000/api/career/getacareer/64dde7c80206a62446947245",
+            "method": "GET",
+            "sortNum": 125000,
+            "created": "2023-08-17T09:24:57.046Z",
+            "modified": "2023-08-17T09:27:10.757Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a2347499-9b32-40e0-8099-c018fb39a395",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "getacareer",
+            "url": "http://localhost:8000/api/feedback/get/64de0764b54a1da9c1600a65",
+            "method": "GET",
+            "sortNum": 125000,
+            "created": "2023-08-17T10:34:36.907Z",
+            "modified": "2023-08-17T11:48:01.500Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9135dc3-223a-42a5-b91e-bdbb2035d90d",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "getall",
+            "url": "http://localhost:8000/api/career/getall",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-08-17T09:24:55.015Z",
+            "modified": "2023-08-17T09:27:32.393Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "49bb34d1-9d54-4848-a921-c34f7ec933b7",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d77bb4ff-8ff3-409f-ad39-4ae2d983a5c3",
+            "name": "saveProfilePhoto",
+            "url": "http://localhost:8000/api/user/profileimg",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-08-17T09:38:29.808Z",
+            "modified": "2023-08-17T09:53:11.073Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "fullName",
+                        "value": "sakshi"
+                    },
+                    {
+                        "name": "email",
+                        "value": "kadaves2132@gmail.com"
+                    },
+                    {
+                        "name": "contact",
+                        "value": "800705654551"
+                    },
+                    {
+                        "name": "appearingAs",
+                        "value": "Intern"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234567"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\Blue And White Creative Abstract Join Us Talk Show Instagram Post.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "57e70164-7305-4f8a-b35e-ff2123f3cee2",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "getall",
+            "url": "http://localhost:8000/api/feedback/getall",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-08-17T10:34:36.908Z",
+            "modified": "2023-08-17T11:45:42.068Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0d2493d1-3a8b-4f6d-b5f0-3e5f434ff553",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "update",
+            "url": "http://localhost:8000/api/career/update/64dde7c80206a62446947245",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-08-17T09:24:58.854Z",
+            "modified": "2023-08-17T09:28:56.736Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"10000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "caf7a22f-7cb5-4726-b0fe-faf14396d0d4",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "update",
+            "url": "http://localhost:8000/api/feedback/update/64de0764b54a1da9c1600a65",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-08-17T10:34:36.909Z",
+            "modified": "2023-08-17T11:49:36.264Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "saskhi"
+                    },
+                    {
+                        "name": "description",
+                        "value": "manssiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "5"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\Blue And White Creative Abstract Join Us Talk Show Instagram Post.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "75476729-5a52-48f1-8ef2-0eff7ec507ec",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "570790bc-5ed2-478a-a3a5-f3b9e79a1e08",
+            "name": "delete",
+            "url": "http://localhost:8000/api/career/delete/64dde7c80206a62446947245",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-08-17T09:25:00.728Z",
+            "modified": "2023-08-17T09:29:21.770Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ea1bfab4-7153-4fc3-9637-a35f623ff074",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "d2db7209-44b5-4782-b531-086ac7ee274d",
+            "name": "delete",
+            "url": "http://localhost:8000/api/career/delete/64dde7c80206a62446947245",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-08-17T10:34:36.910Z",
+            "modified": "2023-08-17T10:34:36.906Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"Deadline\": \"2023-07-07,\",\n    \"description\": \"string\",\n    \"NameofPosition\": \"string\",\n    \"location\": \"string\",\n    \"Type\": \"job\",\n    \"jobDetails\": {\n        \"salary\": \"50000\",\n        \"Experience\": \"string\"\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "471029a8-7210-4c7e-8d60-f47c88f60f68",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0ccedcff-1da8-4701-97b6-e7164725795b",
+            "name": "adminRegister",
+            "url": "http://localhost:8000/api/admin/Register",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-08-18T07:01:13.314Z",
+            "modified": "2023-08-18T08:08:11.185Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\n{\n  \n  \"password\": \"securedPassword\",\n      \"name\":\"sakshi kadave\",\n      \"email\":\"sakshi@gmail.com\",\n      \"contact\":\"80072334232\",\n      \"address\":\"nashik\",\n      \"state\":\"maharashtra\",\n      \"role\":\"admin\",\n      \"isSuper\":\"true\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae4b78d2-8a17-4384-a660-172071ce2219",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0ccedcff-1da8-4701-97b6-e7164725795b",
+            "name": "login",
+            "url": "http://localhost:8001/api/admin/login",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-08-18T07:37:51.174Z",
+            "modified": "2023-08-18T09:43:52.468Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"password\": \"securedPassword\",\n      \"email\":\"sakshi@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40ee472e-6ad0-4583-8eb8-04e582a7b8bd",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0ccedcff-1da8-4701-97b6-e7164725795b",
+            "name": "get",
+            "url": "http://localhost:8001/api/admin/get/64df26ef1f3a8cd01c99e433",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-08-18T07:57:46.096Z",
+            "modified": "2023-08-18T09:44:07.187Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"password\": \"securedPassword\",\n      \"email\":\"saks2!@123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyNmVmMWYzYThjZDAxYzk5ZTQzMyIsImlhdCI6MTY5MjM0NjIyNywiZXhwIjoxNjkyNDMyNjI3fQ.GCPNnz1gZ4pWY-YmuUwH12xwk7OKKuop2GD8VT25Q8w"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe23bc07-7f83-49aa-b053-8e9ad05897a1",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0ccedcff-1da8-4701-97b6-e7164725795b",
+            "name": "getall",
+            "url": "http://localhost:8000/api/admin/getall",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-08-18T08:01:04.703Z",
+            "modified": "2023-08-18T08:12:52.546Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"password\": \"securedPassword\",\n      \"email\":\"saks2!@123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZGYyNmVmMWYzYThjZDAxYzk5ZTQzMyIsImlhdCI6MTY5MjM0NjM2MiwiZXhwIjoxNjkyNDMyNzYyfQ.gWdhS-2j6U2OlLEOlROnSqo3aiES88aqNlICL7_bUtM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d6d85714-c7f8-4eb5-b049-1df74340c2e0",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "getanews",
+            "url": "http://localhost:8000/api/dashboard/news/64ec6cd24f48ea77a8e0fc85",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-20T07:27:40.327Z",
+            "modified": "2023-08-28T09:47:56.497Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4893e499-d96c-44c6-bb4e-2b1f2c8c5ba3",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/event/64e5e3bd012a36f7ebf1ca07/64e62a3af945b53ac2309e79",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-23T15:46:08.766Z",
+            "modified": "2023-08-28T11:16:37.879Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f2dc309-cf7b-4e34-9878-823617e34768",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/event/64e62a3af945b53ac2309e79",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-23T16:10:09.134Z",
+            "modified": "2023-08-23T16:10:09.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b7963027-97d5-4698-89de-8eb74a479a87",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/slider/64e5e3bd012a36f7ebf1ca07/64e636460ff439e9ee153206",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-23T16:38:00.423Z",
+            "modified": "2023-08-28T11:13:13.157Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bf655588-210c-462f-b568-60c15a178b87",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/our-team/64e5e3bd012a36f7ebf1ca07/64ec7f4f71b675decddd2b2d",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-24T17:42:11.420Z",
+            "modified": "2023-08-28T11:10:43.029Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ff374ca4-cd3f-4a61-9783-405544ea3b36",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/achivement/64e5e3bd012a36f7ebf1ca07/64ec8385d3df06cdbb8bf231",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-28T09:45:24.689Z",
+            "modified": "2023-08-28T11:25:27.720Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f1995ed8-3081-4e42-a1a3-695a60b4546e",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "get",
+            "url": "http://localhost:8001/api/dashboard/gallery/64e5e3bd012a36f7ebf1ca07/64ec84d4d3df06cdbb8bf26c",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-08-28T11:27:40.576Z",
+            "modified": "2023-08-28T11:31:16.186Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e7e96e6-b599-4972-979a-02ced3da91cd",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/getall",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-20T07:58:20.414Z",
+            "modified": "2023-08-28T12:19:22.150Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "be803b47-a58f-4625-b1e0-161608e75c4d",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/events",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-23T15:46:08.767Z",
+            "modified": "2023-08-28T11:46:18.975Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "085cd852-31a6-421e-9539-dfc968ef2d76",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/events",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-23T16:10:09.135Z",
+            "modified": "2023-08-23T16:10:09.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f57e707-ab45-4121-ada4-f38d45a26905",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/slider",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-23T16:38:00.424Z",
+            "modified": "2023-08-28T11:00:46.793Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "20cd2452-326d-4c53-9f6b-c6bb549e8c2b",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/ourteam",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-24T17:42:11.421Z",
+            "modified": "2023-08-24T17:45:51.256Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3f1278ad-a6cc-4e63-81af-d23795432b57",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/achivement",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-28T09:45:24.690Z",
+            "modified": "2023-08-28T11:23:52.293Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9473b9cf-c505-4d10-bc93-36f35b5c3717",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "getall",
+            "url": "http://localhost:8001/api/dashboard/gallery",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-08-28T11:27:40.577Z",
+            "modified": "2023-08-28T11:30:00.026Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f8709e53-bcc6-4af1-8f4c-b9d8a127d9b8",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "update",
+            "url": "http://localhost:8000/api/dashboard/update/64ec6cd24f48ea77a8e0fc85",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-20T11:48:08.253Z",
+            "modified": "2023-08-28T10:28:49.104Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "yash"
+                    },
+                    {
+                        "name": "description",
+                        "value": "shdjafhjdfdhfjkdsfjdhfdhfdfhjfhjfhjhfjddff"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2002-09-09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "041204eb-eeb2-4678-9e41-6867c3b47765",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "update",
+            "url": "http://localhost:8000/api/dashboard/update_event/64e5e674a416a6cdd75a852e",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-23T15:46:08.768Z",
+            "modified": "2023-08-28T10:46:53.302Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "location",
+                        "value": "yash"
+                    },
+                    {
+                        "name": "description",
+                        "value": "shdjafhjdfdhfjkdsfjdhfdhfdfhjfhjfhjhfjddff"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2002-09-09"
+                    },
+                    {
+                        "name": "endDate",
+                        "value": "2002-09-09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "photos",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b851789d-87ec-4dd6-8e72-a55641d0c082",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "update",
+            "url": "http://localhost:8001/api/dashboard/update_event/64e5fad71430d1563187cd27",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-23T16:10:09.136Z",
+            "modified": "2023-08-23T16:10:09.133Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "location",
+                        "value": "yash"
+                    },
+                    {
+                        "name": "description",
+                        "value": "shdjafhjdfdhfjkdsfjdhfdhfdfhjfhjfhjhfjddff"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2002-09-09"
+                    },
+                    {
+                        "name": "endDate",
+                        "value": "2002-09-09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "photos",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "69fe9ee3-246b-48e1-a1ee-e24f4c7288c9",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "update",
+            "url": "http://localhost:8001/api/dashboard/slider/64e636460ff439e9ee153206",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-23T16:38:00.425Z",
+            "modified": "2023-08-28T11:15:47.369Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "369cc1a6-1f54-470c-8121-ca097c5f852d",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "update",
+            "url": "http://localhost:8001/api/dashboard/updateteam/64ec7f4f71b675decddd2b2d",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-24T17:42:11.423Z",
+            "modified": "2023-08-28T11:18:05.122Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "position"
+                    },
+                    {
+                        "name": "description",
+                        "value": "position"
+                    },
+                    {
+                        "name": "position",
+                        "value": "positionpositionpositionposition"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cde1a9ac-9afc-4320-9be0-ea5fdd142703",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "update",
+            "url": "http://localhost:8001/api/dashboard/achivement/64ec8385d3df06cdbb8bf231",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-28T09:45:24.691Z",
+            "modified": "2023-08-28T11:26:29.311Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "position"
+                    },
+                    {
+                        "name": "description",
+                        "value": "position"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2002/09/09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "507030e5-86fa-4066-9bb4-8fa40c9e2977",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "update",
+            "url": "http://localhost:8001/api/dashboard/updategallery/64ec84d4d3df06cdbb8bf26c",
+            "method": "PUT",
+            "sortNum": 225000,
+            "created": "2023-08-28T11:27:40.578Z",
+            "modified": "2023-08-28T11:31:35.886Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "position"
+                    },
+                    {
+                        "name": "description",
+                        "value": "position"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2002/09/09"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\User\\Downloads\\WhatsApp Image 2023-08-14 at 11.41.19 PM.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9822fbd0-acb4-4f02-9e69-96029cf4e8b9",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "a6eaa681-fc37-400b-a795-f0a79312dcb1",
+            "name": "deleteNews",
+            "url": "http://localhost:8000/api/dashboard/delete/64e5e3bd012a36f7ebf1ca07/64ec6cd24f48ea77a8e0fc85",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-20T08:02:35.942Z",
+            "modified": "2023-08-28T10:34:38.867Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5391da25-63a0-401a-a82f-97ba20daed51",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "05e36fb0-c925-4764-bb58-daea57308eca",
+            "name": "delete",
+            "url": "http://localhost:8000/api/dashboard/delete_events/64e5e3bd012a36f7ebf1ca07/64e5e674a416a6cdd75a852e",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-23T15:46:08.769Z",
+            "modified": "2023-08-28T10:47:32.634Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c540785-1b20-41a5-832e-d8a8ea549d2c",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "f351d76f-97dd-4834-be9a-2080ad3a95bd",
+            "name": "delete",
+            "url": "http://localhost:8001/api/dashboard/delete_events/64e5e3bd012a36f7ebf1ca07/64e5f8e05b2586db241d3096",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-23T16:10:09.137Z",
+            "modified": "2023-08-23T16:10:09.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "90a61047-5904-4d54-b06a-720a8dee9694",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "52412d61-5926-485a-b4a6-c875ca31c2f7",
+            "name": "delete",
+            "url": "http://localhost:8001/api/dashboard/delete_slider/64e5e3bd012a36f7ebf1ca07/64ec7b612350097e7f320ebf",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-23T16:38:00.426Z",
+            "modified": "2023-08-28T11:04:04.895Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fcaa8118-ae5d-470b-8924-834e137c8198",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "353ec4af-6467-448d-8c4a-4b11ac5a1439",
+            "name": "delete",
+            "url": "http://localhost:8001/api/dashboard/teamdelete/64e5e3bd012a36f7ebf1ca07/64ec7f4f71b675decddd2b2d",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-24T17:42:11.424Z",
+            "modified": "2023-08-28T11:18:37.184Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b97c2e95-ab53-433c-bd8e-4742e51c1ad9",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "0be0729a-4dec-460a-9565-2cab8fdb8fc1",
+            "name": "delete",
+            "url": "http://localhost:8001/api/dashboard/deleteAchivement/64e5e3bd012a36f7ebf1ca07/64ec8385d3df06cdbb8bf231",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-28T09:45:24.692Z",
+            "modified": "2023-08-28T11:27:23.882Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a6c9683b-4857-431f-89a8-ab2c813475d0",
+            "colId": "a48b9868-544d-452e-8096-71fc1bf00c88",
+            "containerId": "17330094-a1a7-447e-b59c-27d65d75feac",
+            "name": "delete",
+            "url": "http://localhost:8001/api/dashboard/deletegallery/64e5e3bd012a36f7ebf1ca07/64ec84d4d3df06cdbb8bf26c",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2023-08-28T11:27:40.579Z",
+            "modified": "2023-08-28T11:32:39.781Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
